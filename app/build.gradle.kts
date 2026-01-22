@@ -1,6 +1,9 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.google.gms.google.services)
+    alias(libs.plugins.android.hilt.dagger)
+    kotlin("kapt")
 }
 
 android {
@@ -35,6 +38,9 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
+    viewBinding{
+        enable=true
+    }
 }
 
 dependencies {
@@ -43,7 +49,28 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation(libs.firebase.auth)
+    implementation(libs.firebase.firestore)
+    implementation(libs.androidx.navigation.fragment.ktx)
+    implementation(libs.androidx.navigation.ui.ktx)
+    implementation(libs.androidx.fragment)
+    implementation(libs.androidx.recyclerview)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    //sdp ssp
+    implementation("com.intuit.sdp:sdp-android:1.1.1")
+    implementation("com.intuit.ssp:ssp-android:1.1.1")
+
+    //lottie
+    implementation(libs.lottie)
+
+    //dagger hilt
+    implementation(libs.hilt.android)
+    kapt(libs.hilt.compiler)
+
+    implementation("com.google.android.material:material:1.13.0")
+
+
 }

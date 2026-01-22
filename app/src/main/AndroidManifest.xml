@@ -12,6 +12,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BloodBank">
         <activity
+            android:name=".UserDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".BMICalculatorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AuthActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AboutBloodDonetionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AboutApp"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
