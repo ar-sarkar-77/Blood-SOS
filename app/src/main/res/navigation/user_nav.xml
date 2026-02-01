@@ -7,17 +7,17 @@
 
     <fragment
         android:id="@+id/userProfileFragment"
-        android:name="com.example.bloodbank.UserProfileFragment"
+        android:name="com.example.bloodbank.views.dashboard.userDashboard.profile.UserProfileFragment"
         android:label="fragment_user_profile"
         tools:layout="@layout/fragment_user_profile" />
     <fragment
         android:id="@+id/requestListFragment"
-        android:name="com.example.bloodbank.RequestListFragment"
+        android:name="com.example.bloodbank.views.dashboard.userDashboard.requestList.RequestListFragment"
         android:label="fragment_request_list"
         tools:layout="@layout/fragment_request_list" />
     <fragment
         android:id="@+id/addRequestFragment"
-        android:name="com.example.bloodbank.AddRequestFragment"
+        android:name="com.example.bloodbank.views.dashboard.userDashboard.addRequest.AddRequestFragment"
         android:label="fragment_add_request"
         tools:layout="@layout/fragment_add_request" />
 </navigation>
